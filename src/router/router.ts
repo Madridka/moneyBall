@@ -6,17 +6,17 @@ const router = createRouter({
     {
       path: "/",
       name: "main",
-      component: () => import("@/components/MainComp.vue"),
+      component: () => import("@/views/MainLayout.vue"),
       meta: {
-        title: "hello world",
+        title: "moneyBall",
       },
       children: [
         {
           path: "/menu",
           name: "Menu",
-          component: () => import("@/components/HelloWorld.vue"),
+          component: () => import("@/components/MenuApp.vue"),
           meta: {
-            title: "Main",
+            title: "Menu",
           },
         },
         {
@@ -24,7 +24,15 @@ const router = createRouter({
           name: "Test",
           component: () => import("@/components/TestCard.vue"),
           meta: {
-            title: "Main",
+            title: "Test",
+          },
+        },
+        {
+          path: "/settings",
+          name: "Settings",
+          component: () => import("@/components/SettingsApp.vue"),
+          meta: {
+            title: "Settings",
           },
         },
       ],

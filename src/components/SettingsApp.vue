@@ -2,15 +2,13 @@
 import Button from "primevue/button";
 
 const hello = (): void => {
-  console.log("hello");
+  console.log("settings");
 };
 </script>
 
 <template>
-  TEST CARD
+  SETTINGS
   <Button label="hello" @click="hello"> </Button>
-
-  <Button label="Secondary" severity="secondary" />
 </template>
 
 <style scoped></style>

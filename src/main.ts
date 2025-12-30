@@ -1,5 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import "@/assets/styles/main.css";
+import App from "./App.vue";
+import primeVue3 from "@/plugins/primevue/primevue";
+import router from "@/router/router";
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(primeVue3);
+app.use(router);
+app.mount("#app");

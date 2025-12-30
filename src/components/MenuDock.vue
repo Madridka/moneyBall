@@ -46,9 +46,9 @@ const items = ref([
   >
     <template #itemicon="{ item }">
       <RouterLink :to="item.to">
-        <span
+        <div
           :class="{
-            'bg-gray-500 p-2': isActive(item.to),
+            'bg-gray-400 p-2': isActive(item.to),
           }"
           style="font-size: 2rem"
         >
@@ -57,7 +57,7 @@ const items = ref([
             :class="item.icon"
             style="font-size: 2rem"
           />
-        </span>
+        </div>
       </RouterLink>
     </template>
   </Dock>
